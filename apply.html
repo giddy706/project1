@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Hearth &amp; Hound</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-apply">
+
+  <div class="top-line"></div>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="home.html" class="logo-link">
+        <img src="images/Hearth & Hound Rescue Logo.png" alt="Hearth & Hound Rescue logo" class="logo">
+      </a>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="adopt.html">Adopt</a>
+        <a href="missing.html">Missing</a>
+        <a href="centres.html">Centres</a>
+        <a class="active" href="apply.html" aria-current="page">Apply</a>
+      </nav>
+    </div>
+  </header>
+   <main class="container">
+        <section class="intro">
+            <p class="small-title">ADOPTION APPLICATION</p>
+            <h1>Give them a place to call home.</h1>
+            <p>
+                Interested in adopting an animal? Fill in the form below.
+                The rescue desk will use your details to get in touch with you.
+            </p>
+        </section>
+
+        <section class="form-section">
+            <div class="form-heading">
+                <p class="small-title">LET'S GET STARTED</p>
+                <h2>Tell us about yourself</h2>
+                <p>Please complete the details below.</p>
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full name</label>
+                        <input type="text" placeholder="enter your full name " required>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone number</label>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="animal">Animal you want to adopt</label>
+                        <select id="animal" name="animal" required>
+                            <option value="">Choose an animal</option>
+                            <option value="sutheis">sutheis</option>
+                            <option value="ater">ater</option>
+                            <option value="caicedo">caicedo</option>
+                            <option value="Giddy">Giddy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="home">What type of home do you live in?</label>
+                    <select id="home" name="home" required>
+                        <option value="">Select your home type</option>
+                        <option value="House">House</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Why would you like to adopt this animal?</label>
+                    <textarea id="reason" name="reason" rows="5" placeholder="Write a short message..." required></textarea>
+                </div>
+
+                <button type="submit">Send application</button>
+                <input class="calton" type="reset" value="clear"></input>
+
+            </form>
+        </section>
+
+        <p class="note">
+            <strong>Please note:</strong> Sending this form does not mean the adoption is confirmed.
+            The rescue desk will contact you to arrange a meeting.
+        </p>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Hearth &amp; Hound Rescue</p>
+      <p>Helping pets find their missing halves.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
