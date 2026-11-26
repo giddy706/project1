@@ -31,14 +31,14 @@
         <p class="kicker">NoticeBoard</p>
         <h1>Lost and found</h1>
         <p class="lead">Recent notices from around town. Lost a pet or found one? Post a notice and our rescue desks will help get them home.</p>
-        <a class="button" href="missing.html">Post a notice</a>
+         <a class="button" href="#post">Post a notice</a>
       </div>
     </section>
 
     <section>
       <div class="row">
         <h2>Latest notices</h2>
-        <p class="smallmuted">4 notices</p>
+      
       </div>
 
       <div class="notices">
@@ -92,10 +92,63 @@
             <p class="small">last seen, near bogani</p>
           </div>
         </article>
+        
 
 
       </div>
     </section>
+     <section class="post-notice" id="post">
+      <div class="post-card">
+        <p class="kicker">Post a notice</p>
+        <h2>Lost or found a pet?</h2>
+        <p class="smallmuted">Fill in the details below and our rescue desks will help get them home.</p>
+
+        <form id="notice-form" action="#" method="post">
+          <div class="post-row">
+            <div class="post-group">
+              <label for="n-type">Is the pet lost or found?</label>
+              <select id="n-type" name="type" required>
+                <option value="">Choose one</option>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+              </select>
+            </div>
+            <div class="post-group">
+              <label for="n-name">Pet name (if known)</label>
+              <input id="n-name" name="name" type="text" placeholder="Enter the pet's name">
+            </div>
+          </div>
+
+          <div class="post-group">
+            <label for="n-desc">Animal and description</label>
+            <input id="n-desc" name="description" type="text" placeholder="e.g. Cat, brown tabby, white chest" required>
+          </div>
+
+          <div class="post-group">
+            <label for="n-place">Where was it last seen / found?</label>
+            <input id="n-place" name="place" type="text" placeholder="Enter the place" required>
+          </div>
+
+          <div class="post-group">
+            <label for="n-contact">Your phone or email</label>
+            <input id="n-contact" name="contact" type="text" placeholder="How can we reach you?" required>
+          </div>
+
+          <button type="submit" class="post-button">Post notice</button>
+        </form>
+
+        <p class="post-thanks" id="post-thanks" hidden>Thank you! Your notice has been received. A rescue desk will be in touch soon.</p>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById('notice-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        this.hidden = true;
+        document.getElementById('post-thanks').hidden = false;
+      });
+    </script>
+
 
   </main>
 

@@ -227,26 +227,6 @@ body {
   background: #e7eee8;
 }
 
-@media (max-width: 700px) {
-.page-home .hero {
-  flex-direction: column;
-  align-items: stretch;
-  padding-top: 35px;
-}
-.page-home .hero h1 {
-  font-size: 36px;
-}
-.page-home .hero-image img {
-  height: 260px;
-}
-.page-home .cards {
-  grid-template-columns: 1fr;
-}
-.page-home .banner-content {
-  flex-direction: column;
-  align-items: flex-start;
-}
-}
 
 /* ----- adopt page ----- */
 .page-adopt .pginfo {
@@ -555,11 +535,7 @@ body {
   color: #666;
 }
 
-@media (max-width: 600px) {
-.page-centres .desks {
-  grid-template-columns: 1fr;
-}
-}
+
 
 /* ----- apply page ----- */
 .page-apply main,
@@ -696,3 +672,77 @@ body {
   max-width: 1100px;
   padding: 0;
 }
+/* missing page: "Post a notice" form */
+.page-missing .post-notice {
+  padding: 20px;
+}
+
+.page-missing .post-card {
+  max-width: 750px;
+  margin: 20px auto 30px;
+  padding: 30px;
+  background: white;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.page-missing .post-card h2 {
+  margin: 5px 0;
+}
+
+.page-missing .post-row {
+  display: flex;
+  gap: 10px;
+}
+
+.page-missing .post-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.page-missing .post-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.page-missing .post-group input,
+.page-missing .post-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background: white;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.page-missing .post-group input:focus,
+.page-missing .post-group select:focus {
+  outline: 2px solid blueviolet;
+}
+
+.page-missing .post-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background: blueviolet;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page-missing .post-thanks {
+  margin: 20px 0 0;
+  padding: 15px;
+  border-radius: 6px;
+  background: #e4f3e4;
+  color: green;
+  font-weight: bold;
+}
+
